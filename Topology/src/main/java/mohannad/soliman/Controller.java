@@ -19,23 +19,14 @@ public class Controller
      * Used for quick access to certain topologies and ensures uniqueness.
      */
     private static HashMap<String, Topology> topologies = new HashMap<>();
-//    public Controller(){
-//        this.topologies = new HashMap<>();
-//    }
+
     /**
      * Method where user enters path of topology file to be read
      * @param fileName
      * @return True if file exists with valid json format else False
      */
     public static boolean readJSON(String fileName){
-//        File file = new File(fileName);
-//        Topology topology;
-//        if (!file.exists()) return false;
-//        try{
-//            topology = ReaderJSON.readTopology(fileName);
-//        }catch (Exception e){
-//            return false;
-//        }
+
         Topology topology = ReaderJSON.readTopology(fileName);
         if (topology == null) return false;
         topologies.put(topology.getID() ,topology);
