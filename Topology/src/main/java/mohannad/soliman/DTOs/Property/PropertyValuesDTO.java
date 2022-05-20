@@ -1,6 +1,5 @@
 package mohannad.soliman.DTOs.Property;
 
-import org.json.JSONObject;
 
 public class PropertyValuesDTO {
     private float minValue;
