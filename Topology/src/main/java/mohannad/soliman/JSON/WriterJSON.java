@@ -14,7 +14,7 @@ import java.io.*;
 public class WriterJSON {
     /**
      * Method that writes a topology that's stored in memory into the disk
-     * @param topology
+     * @param topology topology object to be stored
      * @return True if no errors occurred else False
      */
     public static boolean writeTopology(Topology topology){
@@ -78,7 +78,7 @@ public class WriterJSON {
 
     /**
      * Method that returns a StringBuilder containing what's inside the save file
-     * @param path
+     * @param path path of file to read from
      * @return StringBuilder containing file contents
      * @throws IOException
      */
@@ -98,10 +98,10 @@ public class WriterJSON {
 
     /**
      * Method that writes the contents of a string in a given file
-     * @param contents
-     * @param path
+     * @param contents contents of string to be written
+     * @param path path to write to
      * @return True if no errors occurred else False
-     * @throws IOException
+     * @throws IOException if file not found
      */
     private static boolean writeFileContents(String contents, String path) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(path));

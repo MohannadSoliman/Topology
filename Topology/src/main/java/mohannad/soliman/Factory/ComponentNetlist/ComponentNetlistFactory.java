@@ -12,8 +12,8 @@ import org.json.JSONObject;
 public class ComponentNetlistFactory implements IComponentNetlistFactory{
     /**
      * Method that creates a Netlist DTO depending on the type of component and JSONObject
-     * @param type
-     * @param arrayObject
+     * @param type type of component property
+     * @param arrayObject json object of property
      * @return INetListDTO : Marker interface for both ResistorNetlistDTO & NmosNetlistDTO
      */
     @Override

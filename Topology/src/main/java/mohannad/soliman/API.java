@@ -10,7 +10,7 @@ import mohannad.soliman.Entities.Topology;
 public class API {
     /**
      * Method where user enters path of topology file to be read
-     * @param fileName
+     * @param fileName path of input file
      * @return True if file exists with valid json format else False
      */
     public static boolean readJSON(String fileName){
@@ -20,7 +20,7 @@ public class API {
     /**
      * Method where user chooses the ID of the topology in the memory to be written to disk
      * in savedTopologies.json file
-     * @param topologyID
+     * @param topologyID ID of wanted topology
      * @return True if ID is for existing topology else False
      */
     public static boolean writeJSON(String topologyID){
@@ -37,7 +37,7 @@ public class API {
 
     /**
      * Method that deletes the topology of the given ID
-     * @param topologyID
+     * @param topologyID ID of wanted topology
      * @return True if topology exists else False
      */
     public static boolean deleteTopology(String topologyID){
@@ -46,7 +46,7 @@ public class API {
 
     /**
      * Method that returns array of all devices in a topology
-     * @param topologyID
+     * @param topologyID ID of wanted topology
      * @return Array of components in the topology
      */
     public static Component[] queryDevices(String topologyID){
@@ -55,8 +55,8 @@ public class API {
     /**
      * Method that returns array of components belonging to a certain topology having a component whose
      * netlist contains the required ID
-     * @param topologyID
-     * @param netlistNodeID
+     * @param topologyID ID of wanted topology
+     * @param netlistNodeID ID of wanted netlist node
      * @return Array of components
      */
     public static Component[] queryDevicesWithNetlistNode(String topologyID, String netlistNodeID){

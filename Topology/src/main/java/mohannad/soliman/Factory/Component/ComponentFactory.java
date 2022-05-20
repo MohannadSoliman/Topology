@@ -10,7 +10,7 @@ import mohannad.soliman.Entities.Resistor;
 public class ComponentFactory implements IComponentFactory{
     /**
      * Method that creates component type (in our case "resistor" or "nmos") based on input string
-     * @param type
+     * @param type type of component
      * @return Component
      */
     @Override

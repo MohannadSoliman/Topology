@@ -23,7 +23,7 @@ public class ReaderJSON {
     /**
      * Method that reads json file stored in given path
      * it converts the contents into a Topology object
-     * @param filePath
+     * @param filePath path of input file
      * @return Topology object if file exists and file format is correct else Null
      */
     public static Topology readTopology(String filePath){
@@ -82,7 +82,7 @@ public class ReaderJSON {
 
     /**
      * Method that reads json file
-     * @param filePath
+     * @param filePath path of input file
      * @return InputStream of the json file
      */
     private static InputStream setupInputStream(String filePath){
@@ -101,8 +101,8 @@ public class ReaderJSON {
     /**
      * Method that returns a PropertyValuesDTO depending on the component type and the contents of the
      * JSONObject (in our case whether it was "resistance" or "m(l)"
-     * @param type
-     * @param componentElement
+     * @param type property type (in our case "resistance" or "m(l)")
+     * @param componentElement json object of property
      * @return PropertyValuesDTO
      */
     private static PropertyValuesDTO setupPropertyValues(String type, JSONObject componentElement){

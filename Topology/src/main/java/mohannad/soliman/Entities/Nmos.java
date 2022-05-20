@@ -7,6 +7,9 @@ import java.util.HashMap;
  * Subclass from Component class with the addition of setNetlist
  */
 public class Nmos extends Component{
+    /**
+     * Constructor
+     */
     public Nmos(){
         this.setType("nmos");
         this.setProperty("m(l)");

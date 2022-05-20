@@ -9,8 +9,8 @@ import org.json.JSONObject;
 public interface IComponentNetlistFactory {
     /**
      * Method that creates a Netlist DTO depending on the type of component and JSONObject
-     * @param type
-     * @param arrayObject
+     * @param type type of property
+     * @param arrayObject json object of property
      * @return INetListDTO : Marker interface for both ResistorNetlistDTO & NmosNetlistDTO
      */
     INetlistDTO createNetlistDTO(String type, JSONObject arrayObject);

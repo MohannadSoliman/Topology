@@ -8,6 +8,9 @@ import java.util.HashMap;
  * Subclass from Component class with the addition of setNetlist
  */
 public class Resistor extends Component{
+    /**
+     * Constructor
+     */
     public Resistor(){
             this.setType("resistor");
             this.setProperty("resistance");
@@ -16,7 +19,7 @@ public class Resistor extends Component{
 
     /**
      * Method that sets netlist map given a DTO object
-     * @param obj
+     * @param obj netlist node object to be used to fill variables
      */
     @Override
     public void setNetlist(Object obj) {
