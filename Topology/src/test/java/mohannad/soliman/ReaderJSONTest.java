@@ -22,7 +22,7 @@ public class ReaderJSONTest {
     }
     @Test
     public void readJSON_WrongFormat(){
-        Topology topology = ReaderJSON.readTopology("topology2.json"); // contains invalid json
+        Topology topology = ReaderJSON.readTopology("topology3.json"); // contains invalid json
         assertNull(topology);
     }
 }

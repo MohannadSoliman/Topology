@@ -21,7 +21,7 @@ public class APITest
     }
     @Test
     public void writeJSON_Exist(){
-        API.readJSON("topology.json"); // place item in topologies data structure
+        API.readJSON("topology2.json"); // place item in topologies data structure
         assertTrue(API.writeJSON(API.queryTopologies()[0].getID()));
     }
     @Test
